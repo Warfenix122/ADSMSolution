@@ -1,0 +1,12 @@
+<button (click)="openModal()"></button>
+<div [ngClass]="isModalOpen ? 'block' : 'hidden'" class="fixed inset-0 bg-gray-800 bg-opacity-75 flex justify-center items-center">
+    <div class="bg-white dark:bg-gray-900 dark:text-gray-100 p-8 rounded-lg shadow-lg max-w-full w-full relative"></div>
+    <h2 class="text-2xl font-bold mb-4">Create customer</h2>
+    <form (ngSubmit)="onSubmit()" [formGroup]="dynamicForm">
+        @for (control of formControls; track $index) {
+            <app-customer-field-input [formGroup]="dynamicForm" [controlName]="control"></app-customer-field-input>
+        }
+        <button type="submit" (click)="closeModal()">Submit</button>
+    </form>
+</div>
+

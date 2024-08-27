@@ -1,0 +1,16 @@
+<app-nav-bar></app-nav-bar>
+<button><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+</svg>
+</button>
+@if (customer$ | async;as customers) {
+  @if (customers.length > 0) {
+    <div class="grid lg:grid-cols-4 gap-3">
+    @for (item of customers; track $index) {
+        <app-customer-display [customer]="item"></app-customer-display> 
+    }
+  </div>
+  }@else {
+    <p>No customers found ....</p>
+  }
+}

@@ -1,0 +1,8 @@
+<div [formGroup]="formGroup"> 
+    <label [for]="controlName">{{controlName | titlecase }}</label>
+    <input [id]="controlName" [formControlName]="controlName" class="border p-2 rounded w-full"/>
+
+    @if (formGroup.get(controlName)?.invalid && formGroup.get(controlName)?.touched) {
+        <div class="text-red-800">{{controlName | titlecase }} is required</div>
+    }
+</div>

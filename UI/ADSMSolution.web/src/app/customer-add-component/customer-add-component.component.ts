@@ -1,8 +1,12 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { CustomerFieldInputComponent } from '../customer-field-input/customer-field-input.component';
 import { NgClass } from '@angular/common';
+import { Customer } from '../../Modules/Customer.model';
+import { environment } from '../../environments/environment';
+import { Router } from '@angular/router';
+import { CustomerService } from '../services/customer.service';
 
 
 
@@ -15,22 +19,27 @@ import { NgClass } from '@angular/common';
 })
 export class CustomerAddComponentComponent {
   http = inject(HttpClient)
+  router = inject(Router)
+  apiUrl = environment.apiURL
   dynamicForm: FormGroup = new FormGroup({});
   isModalOpen = false;
 
-  constructor(private fb: FormBuilder){}
+  constructor(private fb: FormBuilder, private customerService: CustomerService){}
 
   openModal(){
-    console.log(this.isModalOpen)
     this.isModalOpen = true;
   }
 
-  closeModal(){
-    console.log(this.isModalOpen)
-    this.isModalOpen = false;
+  submitModal(){
+    if(this.dynamicForm.valid){
+      this.closeModal()
+    }
   }
 
-  
+  closeModal(){
+    this.isModalOpen = false;
+    this.ngOnInit()
+  }
 
   ngOnInit(){
     this.dynamicForm = this.fb.group({
@@ -48,17 +57,9 @@ export class CustomerAddComponentComponent {
   onSubmit() {
     if (this.dynamicForm.valid) {
       console.log(this.dynamicForm.value)
-      //const customer: Customer = this.dynamicForm.value;
-      //this.sendPostRequest(customer);
+      const customer: Customer = this.dynamicForm.value;
+      this.customerService.addCustomer(customer);
     }
   }
 
-  /*sendPostRequest(customer: Customer) {
-    const apiUrl = 'https://api.example.com/customers'; // Replace with your API endpoint
-
-    this.http.post(apiUrl, customer).subscribe({
-      next: (response) => console.log('Success:', response),
-      error: (error) => console.error('Error:', error)
-    });
-  }*/
 }

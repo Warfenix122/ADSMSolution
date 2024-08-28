@@ -3,24 +3,20 @@
   "WorkspaceRootPath": "E:\\Coding Adventures\\ADSMSolution\\API\\ADMSSoftwareEngenieerSolution\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{867B0A3B-4A0A-43E7-8EAF-4D6E90D1D3C8}|ADMSSoftwareEngenieerSolution\\ADMSSoftwareEngenieerSolution.csproj|e:\\coding adventures\\adsmsolution\\api\\admssoftwareengenieersolution\\admssoftwareengenieersolution\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{867B0A3B-4A0A-43E7-8EAF-4D6E90D1D3C8}|ADMSSoftwareEngenieerSolution\\ADMSSoftwareEngenieerSolution.csproj|solutionrelative:admssoftwareengenieersolution\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{867B0A3B-4A0A-43E7-8EAF-4D6E90D1D3C8}|ADMSSoftwareEngenieerSolution\\ADMSSoftwareEngenieerSolution.csproj|e:\\coding adventures\\adsmsolution\\api\\admssoftwareengenieersolution\\admssoftwareengenieersolution\\models\\domain\\addcustomerrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{867B0A3B-4A0A-43E7-8EAF-4D6E90D1D3C8}|ADMSSoftwareEngenieerSolution\\ADMSSoftwareEngenieerSolution.csproj|solutionrelative:admssoftwareengenieersolution\\models\\domain\\addcustomerrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{867B0A3B-4A0A-43E7-8EAF-4D6E90D1D3C8}|ADMSSoftwareEngenieerSolution\\ADMSSoftwareEngenieerSolution.csproj|e:\\coding adventures\\adsmsolution\\api\\admssoftwareengenieersolution\\admssoftwareengenieersolution\\data\\admsspikesolution.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{867B0A3B-4A0A-43E7-8EAF-4D6E90D1D3C8}|ADMSSoftwareEngenieerSolution\\ADMSSoftwareEngenieerSolution.csproj|solutionrelative:admssoftwareengenieersolution\\data\\admsspikesolution.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{867B0A3B-4A0A-43E7-8EAF-4D6E90D1D3C8}|ADMSSoftwareEngenieerSolution\\ADMSSoftwareEngenieerSolution.csproj|e:\\coding adventures\\adsmsolution\\api\\admssoftwareengenieersolution\\admssoftwareengenieersolution\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{867B0A3B-4A0A-43E7-8EAF-4D6E90D1D3C8}|ADMSSoftwareEngenieerSolution\\ADMSSoftwareEngenieerSolution.csproj|solutionrelative:admssoftwareengenieersolution\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{867B0A3B-4A0A-43E7-8EAF-4D6E90D1D3C8}|ADMSSoftwareEngenieerSolution\\ADMSSoftwareEngenieerSolution.csproj|e:\\coding adventures\\adsmsolution\\api\\admssoftwareengenieersolution\\admssoftwareengenieersolution\\models\\domain\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{867B0A3B-4A0A-43E7-8EAF-4D6E90D1D3C8}|ADMSSoftwareEngenieerSolution\\ADMSSoftwareEngenieerSolution.csproj|solutionrelative:admssoftwareengenieersolution\\models\\domain\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{867B0A3B-4A0A-43E7-8EAF-4D6E90D1D3C8}|ADMSSoftwareEngenieerSolution\\ADMSSoftwareEngenieerSolution.csproj|e:\\coding adventures\\adsmsolution\\api\\admssoftwareengenieersolution\\admssoftwareengenieersolution\\models\\domain\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{867B0A3B-4A0A-43E7-8EAF-4D6E90D1D3C8}|ADMSSoftwareEngenieerSolution\\ADMSSoftwareEngenieerSolution.csproj|solutionrelative:admssoftwareengenieersolution\\models\\domain\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{867B0A3B-4A0A-43E7-8EAF-4D6E90D1D3C8}|ADMSSoftwareEngenieerSolution\\ADMSSoftwareEngenieerSolution.csproj|e:\\coding adventures\\adsmsolution\\api\\admssoftwareengenieersolution\\admssoftwareengenieersolution\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{867B0A3B-4A0A-43E7-8EAF-4D6E90D1D3C8}|ADMSSoftwareEngenieerSolution\\ADMSSoftwareEngenieerSolution.csproj|solutionrelative:admssoftwareengenieersolution\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,69 +26,56 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "AddCustomerRequestDTO.cs",
-              "DocumentMoniker": "E:\\Coding Adventures\\ADSMSolution\\API\\ADMSSoftwareEngenieerSolution\\ADMSSoftwareEngenieerSolution\\Models\\Domain\\AddCustomerRequestDTO.cs",
-              "RelativeDocumentMoniker": "ADMSSoftwareEngenieerSolution\\Models\\Domain\\AddCustomerRequestDTO.cs",
-              "ToolTip": "E:\\Coding Adventures\\ADSMSolution\\API\\ADMSSoftwareEngenieerSolution\\ADMSSoftwareEngenieerSolution\\Models\\Domain\\AddCustomerRequestDTO.cs",
-              "RelativeToolTip": "ADMSSoftwareEngenieerSolution\\Models\\Domain\\AddCustomerRequestDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAoAAAAAAAAAA==",
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "E:\\Coding Adventures\\ADSMSolution\\API\\ADMSSoftwareEngenieerSolution\\ADMSSoftwareEngenieerSolution\\Models\\Domain\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "ADMSSoftwareEngenieerSolution\\Models\\Domain\\ApplicationUser.cs",
+              "ToolTip": "E:\\Coding Adventures\\ADSMSolution\\API\\ADMSSoftwareEngenieerSolution\\ADMSSoftwareEngenieerSolution\\Models\\Domain\\ApplicationUser.cs",
+              "RelativeToolTip": "ADMSSoftwareEngenieerSolution\\Models\\Domain\\ApplicationUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T18:29:00.799Z",
+              "WhenOpened": "2024-08-28T18:06:51.752Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ADMSSpikeSolution.cs",
-              "DocumentMoniker": "E:\\Coding Adventures\\ADSMSolution\\API\\ADMSSoftwareEngenieerSolution\\ADMSSoftwareEngenieerSolution\\Data\\ADMSSpikeSolution.cs",
-              "RelativeDocumentMoniker": "ADMSSoftwareEngenieerSolution\\Data\\ADMSSpikeSolution.cs",
-              "ToolTip": "E:\\Coding Adventures\\ADSMSolution\\API\\ADMSSoftwareEngenieerSolution\\ADMSSoftwareEngenieerSolution\\Data\\ADMSSpikeSolution.cs",
-              "RelativeToolTip": "ADMSSoftwareEngenieerSolution\\Data\\ADMSSpikeSolution.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T18:28:56.891Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "CustomerController.cs",
               "DocumentMoniker": "E:\\Coding Adventures\\ADSMSolution\\API\\ADMSSoftwareEngenieerSolution\\ADMSSoftwareEngenieerSolution\\Controllers\\CustomerController.cs",
               "RelativeDocumentMoniker": "ADMSSoftwareEngenieerSolution\\Controllers\\CustomerController.cs",
               "ToolTip": "E:\\Coding Adventures\\ADSMSolution\\API\\ADMSSoftwareEngenieerSolution\\ADMSSoftwareEngenieerSolution\\Controllers\\CustomerController.cs",
               "RelativeToolTip": "ADMSSoftwareEngenieerSolution\\Controllers\\CustomerController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAwBYAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-27T18:28:47.652Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\Coding Adventures\\ADSMSolution\\API\\ADMSSoftwareEngenieerSolution\\ADMSSoftwareEngenieerSolution\\Program.cs",
               "RelativeDocumentMoniker": "ADMSSoftwareEngenieerSolution\\Program.cs",
               "ToolTip": "E:\\Coding Adventures\\ADSMSolution\\API\\ADMSSoftwareEngenieerSolution\\ADMSSoftwareEngenieerSolution\\Program.cs",
               "RelativeToolTip": "ADMSSoftwareEngenieerSolution\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABPAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAADgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-27T18:20:05.522Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "Customer.cs",
               "DocumentMoniker": "E:\\Coding Adventures\\ADSMSolution\\API\\ADMSSoftwareEngenieerSolution\\ADMSSoftwareEngenieerSolution\\Models\\Domain\\Customer.cs",
               "RelativeDocumentMoniker": "ADMSSoftwareEngenieerSolution\\Models\\Domain\\Customer.cs",
               "ToolTip": "E:\\Coding Adventures\\ADSMSolution\\API\\ADMSSoftwareEngenieerSolution\\ADMSSoftwareEngenieerSolution\\Models\\Domain\\Customer.cs",
               "RelativeToolTip": "ADMSSoftwareEngenieerSolution\\Models\\Domain\\Customer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-27T17:51:37.264Z",
               "EditorCaption": ""

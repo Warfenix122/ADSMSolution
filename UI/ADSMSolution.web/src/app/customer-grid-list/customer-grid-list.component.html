@@ -1,0 +1,14 @@
+<h1 class="flex justify-center items-center text-2xl font-bold mb-4">Current Customers</h1>
+<app-customer-add-component></app-customer-add-component>
+<div class="grid lg:grid-cols-4 gap-3 border-4 responsive-grid w-full">
+  @if (customers.length > 0) {
+    @for (item of customers; track $index) {
+        <app-customer-display [customer]="item"></app-customer-display> 
+    }
+  }@else {
+    <div><p>No Customer Found</p></div>
+    <div><p>No Customer Found</p></div>
+    <div><p>No Customer Found</p></div>
+    <div><p>No Customer Found</p></div>
+  }
+</div>

@@ -9,5 +9,7 @@ namespace ADMSSoftwareEngenieerSolution.Data
             
         }
         public DbSet<Customer> Customers { get; set; }
+        public DbSet<ApplicationUser> Users { get; set; }
+
     }
 }

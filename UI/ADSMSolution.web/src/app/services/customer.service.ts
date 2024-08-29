@@ -1,6 +1,6 @@
 import { inject, Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Observable, BehaviorSubject } from 'rxjs';
+import { BehaviorSubject } from 'rxjs';
 import { Customer } from '../../Modules/Customer.model';
 import { environment } from '../../environments/environment';
 
@@ -24,6 +24,7 @@ export class CustomerService {
   }
 
   addCustomer(customer: Customer) {
+    console.log("Adding Customer")
     this.http.post(`${this.apiUrl}/api/Customer`, customer,{headers: this.authHeader}).subscribe({
       next: (response) => {
         console.log('Success:', response)

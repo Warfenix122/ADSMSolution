@@ -1,17 +1,25 @@
-<button (click)="openModal()"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-    <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-</svg>
+<!-- Add Customer Button -->
+<button
+  (click)="openModal()"
+  class="flex items-center justify-center bg-blue-900 text-white py-3 px-6 border-2 border-yellow-600 rounded-full shadow-md hover:bg-yellow-600 hover:border-blue-800 transition-colors duration-300"
+>
+  <!-- Add an Icon for Clarity -->
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 mr-2">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+  </svg>
+  <!-- Button Text -->
+  Add Customer
 </button>
 <div [ngClass]="isModalOpen ? 'block' : 'hidden'" class="fixed inset-0 bg-gray-800 bg-opacity-75 flex justify-center items-center">
-    <div class="bg-white dark:bg-blue-800 dark:text-white p-8 rounded-lg shadow-lg max-w-md w-full relative">
+    <div class="bg-white dark:bg-white dark:text-black p-8 rounded-lg shadow-lg max-w-md w-full relative border-4 border-blue-800">
     <h2 class="text-2xl font-bold mb-4">Create customer</h2>
     <form (ngSubmit)="onSubmit()" [formGroup]="dynamicForm">
         @for (control of formControls; track $index) {
             <app-customer-field-input [formGroup]="dynamicForm" [controlName]="control"></app-customer-field-input>
         }
         <div class="space-x-7 relative justify-center flex top-4">
-            <button type="submit" class="bg-yellow-600 text-white py-3 px-6 border-2 border-blue-800 rounded-md cursor-pointer transition-colors duration-300 hover:border-gray-100" (click)="closeModal()">Submit</button>
-            <button type="button" class="bg-white text-black py-3 px-6 border-2 border-blue-800 rounded-md cursor-pointer transition-colors duration-300 hover:border-red-800" (click)="closeModal()">Cancel</button>
+            <button type="submit" class="bg-blue-800 text-white py-3 px-6 border-2 border-blue-800 rounded-md cursor-pointer transition-colors duration-300 hover:border-yellow-600">Create</button>
+            <button type="button" class="bg-white text-black py-3 px-6 border-2 border-blue-800 rounded-md cursor-pointer transition-colors duration-300 hover:border-yellow-600" (click)="closeModal()">Cancel</button>
         </div>
     </form>
 </div>

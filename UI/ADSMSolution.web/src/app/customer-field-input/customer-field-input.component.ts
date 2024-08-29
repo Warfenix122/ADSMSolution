@@ -10,6 +10,7 @@ import { FormGroup, ReactiveFormsModule } from '@angular/forms';
   styleUrl: './customer-field-input.component.css'
 })
 export class CustomerFieldInputComponent {
-  @Input() formGroup!: FormGroup
-   @Input() controlName!: string
+  @Input() formGroup!: FormGroup;
+  @Input() controlName!: string;
+
 }

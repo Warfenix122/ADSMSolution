@@ -14,21 +14,39 @@ namespace ADMSSoftwareEngenieerSolution.Controllers
     public class LoginController : ControllerBase
     {
         private readonly IConfiguration _configuration;
+        private readonly ILogger<LoginController> _logger;
 
-        public LoginController(IConfiguration configuration)
+        public LoginController(IConfiguration configuration, ILogger<LoginController> logger)
         {
             _configuration = configuration;
+            _logger = logger;
         }
 
         [HttpPost]
         public IActionResult login(ApplicationUser login)
         {
-            if (IsValidUser(login.Username, login.Password))
+            try
             {
-                var token = GenerateJwtToken(login.Username);
-                return Ok(new { token });
+                if (ModelState.IsValid)
+                {
+                    _logger.LogInformation("Login requested by user {User} at {Time}", login.Username, DateTime.UtcNow);
+                    if (IsValidUser(login.Username, login.Password))
+                    {
+                        _logger.LogInformation("Login Successful by user {User} at {Time}", login.Username, DateTime.UtcNow);
+                        var token = GenerateJwtToken(login.Username);
+                        return Ok(new { token });
+                    }
+                    else
+                    {
+                        return Unauthorized();
+                    }
+                }
+                return BadRequest(ModelState);
             }
-            return Unauthorized();
+            catch (Exception ex) {
+                _logger.LogError($"An Unexpected error occurred during login {ex} with message: {ex.Message}");
+                return StatusCode(500, "An Unexpected error occurred during login");
+            }          
         }
 
         private bool IsValidUser(string username, string password)

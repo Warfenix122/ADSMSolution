@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ADMSSoftwareEngenieerSolution")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8f96e84ae4745b5432b8f0f914b5a220d91457d5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f9b5e14060b67bcff1b41cfbc8a3f1240f6db9b4")]
 [assembly: System.Reflection.AssemblyProductAttribute("ADMSSoftwareEngenieerSolution")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ADMSSoftwareEngenieerSolution")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,0 +1,25 @@
+meta {
+  name: AddCustomer
+  type: http
+  seq: 4
+}
+
+post {
+  url: https://localhost:7272/api/Customer
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImp0aSI6IjVlM2U0ZjllLWE2ODgtNDkyMi1hMzZlLWIwMDM4Y2IxM2U3YyIsImV4cCI6MTcyNDk0MjM5MiwiaXNzIjoiSnd0SXNzdWVyIiwiYXVkIjoiSnd0QXVkaWVuY2UifQ.h2_icY40HDuY8-zb0UbCYlIWT9Vu0cRDokbvsy_akeg
+}
+
+body:json {
+  {
+    "firstName": "sasdasd",
+    "middleName": "string",
+    "lastName": "string",
+    "email": "user@asda.com",
+    "cenas": "adasddasd"
+  }
+}

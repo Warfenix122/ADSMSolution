@@ -18,10 +18,10 @@ import { CustomerService } from '../services/customer.service';
   styleUrl: './customer-add-component.component.css'
 })
 export class CustomerAddComponentComponent {
-  http = inject(HttpClient)
-  router = inject(Router)
-  apiUrl = environment.apiURL
-  dynamicForm: FormGroup = new FormGroup({});
+  http = inject(HttpClient);
+  router = inject(Router);
+  apiUrl = environment.apiURL;
+  dynamicForm!: FormGroup;
   isModalOpen = false;
 
   constructor(private fb: FormBuilder, private customerService: CustomerService){}
@@ -32,7 +32,7 @@ export class CustomerAddComponentComponent {
 
   submitModal(){
     if(this.dynamicForm.valid){
-      this.closeModal()
+      this.onSubmit()
     }
   }
 
@@ -44,7 +44,7 @@ export class CustomerAddComponentComponent {
   ngOnInit(){
     this.dynamicForm = this.fb.group({
       firstName: ['', Validators.required],
-      middleName: ['', Validators.required],
+      middleName: [''],
       lastName: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]]
     });
@@ -59,7 +59,7 @@ export class CustomerAddComponentComponent {
       console.log(this.dynamicForm.value)
       const customer: Customer = this.dynamicForm.value;
       this.customerService.addCustomer(customer);
+      this.closeModal()
     }
   }
-
 }

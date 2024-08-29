@@ -1,2 +1,6 @@
-<div class="inline-block w-screen h-20 bg-blue-800 border-yellow-600 border-solid border-2">
+<div class="flex items-center justify-between p-4 bg-yellow-600 border border-blue-800">
+    <span class="flex-1">
+        <img src="assets/logo.png" alt="Logo" class="h-12  w-auto mr-2">
+    </span>
+    <button type="button" [ngClass]="this.authService.isLoggedIn() ?'block' :'hidden'" class="bg-blue-800 rounded-md text-white py-2 px-4 border-2 border-yellow-600 hover:border-white" (click)="logOut()">Logout</button>
 </div>

@@ -2,6 +2,7 @@ import { Component, inject} from '@angular/core';
 import { AuthService } from '../services/auth.service';
 import { FormBuilder, Validators, FormGroup, ReactiveFormsModule, FormControl } from '@angular/forms';
 import { Router } from '@angular/router';
+import { catchError, of } from 'rxjs';
 
 @Component({
   selector: 'app-login',
@@ -12,7 +13,8 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent {
   authService = inject(AuthService);
-  router = inject(Router)
+  router = inject(Router);
+  errorMessage = '';
   loginFG: FormGroup = new FormGroup({
     Username: new FormControl<string>(''),
     Password: new FormControl<string>('')
@@ -28,10 +30,19 @@ export class LoginComponent {
   }
 
   login(){
-    console.log(this.loginFG.value)
-    this.authService.login(this.loginFG.value).subscribe((response)=>{
-      console.log(response)
-      this.router.navigate(['/customer-grid'])
+    this.authService.login(this.loginFG.value).pipe(
+      catchError(error =>{
+        this.errorMessage = error.message
+        return of() //return an empty observable to complete the stream
+      })
+    ).subscribe({
+      next: response =>{
+        if (this.authService.isLoggedIn()){
+          this.router.navigate(['/customer-grid'])
+        }else {
+          alert('Unexpected response from the server')
+        }
+      }
     })
   }
 }

@@ -14,7 +14,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<ADMSSpikeSolution>(options => options.UseInMemoryDatabase("ADMSSpikeSolution"));
 
-builder.Services.AddAuthentication(options =>
+builder.Services.AddAuthentication(options =>                                   //JWT Authentication Configuration
 {
     options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
     options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
